@@ -80,7 +80,7 @@ const linkedList = () => {
             }
          }
          console.log("index out of range!");
-         return 1;
+         return;
     }
 
     const pop = () => {
@@ -138,7 +138,7 @@ const linkedList = () => {
        string +=`(${tmp.value}) -> null`;
        console.log(string);
     }
-    const showSize = () => {
+    const size = () => {
       return listSize;
     };
 
@@ -147,7 +147,7 @@ const linkedList = () => {
         append,
         prepend,
         find,
-        showSize,
+        size,
         head,
         tail,
         at,
@@ -167,11 +167,15 @@ list.toString();
 console.log("list.head: " + list.head());
 console.log("list.tail: " + list.tail());
 console.log("list.at index 1: " + list.at(1));
-console.log("listSize(): " + list.showSize());
+console.log("list.at index 10: ");
+list.at(10);
+
+console.log("listSize(): " + list.size());
 console.log("pop() is used");
 list.pop();
-console.log("listSize(): " + list.showSize());
+console.log("listSize(): " + list.size());
 list.toString();
 console.log("value one is at index: " + list.find("one"));
+console.log("value eins is at index: " + list.find("eins"));
 console.log("Value one is found in list? " + list.contains("one"));
 console.log("Value eins is found in list? " + list.contains("eins"));
