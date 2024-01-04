@@ -12,3 +12,5 @@ A simple linked list for the Odin Project: linked lists.
 - `contains(value)` returns true if value is in the list and otherwise returns false
 - `find(value)` returns the index of the node containing value, or null if not found
 - `toString()` returns the values of the linked list as strings in the format: `( value ) -> ( value ) -> ( value ) -> null`
+
+Demo here https://boriskarl.github.io/linked-list/
